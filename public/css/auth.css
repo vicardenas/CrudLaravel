@@ -1,0 +1,5 @@
+html, body { height: 100%; }
+body { background: #f6f6f6; margin: 0; }
+
+#container { align-items: center; display: flex; height: 100%; position: fixed; top: 0; width:100%; }
+#login { background: #fff; border: solid 1px #ccc; box-shadow: 0 3px 10px #999; margin: 0 auto; padding: 20px; width: 300px; }

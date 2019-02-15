@@ -1,0 +1,15 @@
+/** FONTS
+ * font-family: 'Comfortaa', cursive;
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
+
+h1 { font-size: 28px; }
+button { background: #0093de; border: none; border-radius: 4px; color: #fff; padding: 5px 20px; }
+a.button { background: #0093de; border: none; border-radius: 4px; color: #fff; display: inline-block; padding: 5px 20px; text-decoration: none; }
+
+.form .box {}
+.form .box + .box { margin-top: 10px; }
+.form .label { display: block; color: #0093de; font-size: 14px; font-weight: bold; margin: 0; }
+.form .input { border: solid 1px #ccc; border-radius: 4px; color: #666; display: block; padding: 5px; width: 100%; }
+.form .button { display: block; text-transform: uppercase; width: 100%; }
