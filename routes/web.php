@@ -20,9 +20,9 @@ Route::middleware('web')->group(function() {
     Route::prefix('administrador')->group(function() {
 
         Route::namespace('Authentication')->group(function() {
-            Route::get('ingresar', ['as' => 'login', 'uses' => 'LoginController@showLoginForm']);
-            Route::post('ingresar', ['as' => 'login', 'uses' => 'LoginController@login']);
-            Route::get('salir', ['as' => 'logout', 'uses' => 'LoginController@logout']);
+            Route::get('ingresar', 'LoginController@showLoginForm')->name('login');
+            Route::post('ingresar', 'LoginController@login')->name('login');
+            Route::get('salir', 'LoginController@logout')->name('logout');
         });
 
         Route::middleware('auth')->namespace('Administrator')->name('admin.')->group(function() {
