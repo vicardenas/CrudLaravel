@@ -48,4 +48,13 @@ class User extends Authenticatable
     {
         return $this->attributes['role'] == 'admin' ? 'Administrador' : 'Usuario';
     }
+
+    /* SCOPES */
+    public function scopeOrdered($query)
+    {
+        $query->orderBy('role')
+            ->orderBy('first_name')
+            ->orderBy('last_name')
+        ;
+    }
 }
