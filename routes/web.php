@@ -28,10 +28,9 @@ Route::middleware('web')->group(function() {
         Route::middleware('auth')->namespace('Administrator')->name('admin.')->group(function() {
 
             Route::get('/', 'DashboardController@index')->name('dashboard');
-
-            Route::resource('usuario', 'UserController');
-            Route::resource('articulo', 'ArticleController');
-            Route::resource('cuenta', 'AccountController', ['only' => ['index', 'edit', 'update']]);
+            Route::resource('usuario', 'UserController', ['names' => 'user']);
+            Route::resource('articulo', 'ArticleController', ['names' => 'article']);
+            Route::resource('cuenta', 'AccountController', ['names' => 'account', 'only' => ['index', 'edit', 'update']]);
 
         });
 
