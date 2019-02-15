@@ -8,8 +8,21 @@ h1 { font-size: 28px; }
 button { background: #0093de; border: none; border-radius: 4px; color: #fff; padding: 5px 20px; }
 a.button { background: #0093de; border: none; border-radius: 4px; color: #fff; display: inline-block; padding: 5px 20px; text-decoration: none; }
 
+.frame { background: #fff; }
+
 .form .box {}
 .form .box + .box { margin-top: 10px; }
 .form .label { display: block; color: #0093de; font-size: 14px; font-weight: bold; margin: 0; }
 .form .input { border: solid 1px #ccc; border-radius: 4px; color: #666; display: block; padding: 5px; width: 100%; }
 .form .button { display: block; text-transform: uppercase; width: 100%; }
+
+.datatable > table { width: 100%; }
+.datatable > table > thead > tr > th { padding: 5px; }
+.datatable > table > tbody > tr > td { height: 50px; padding: 0 5px; }
+.datatable > table > tbody > tr > td > span { display: block; font-size: 14px; }
+.datatable > table > tbody > tr > td > span.strong { display: block; font-size: 16px; font-weight: bold; }
+.datatable > table > tbody > tr > td > span.principal { color: #0093de; }
+.datatable > table > tbody > tr > td > .image { display: none; }
+.datatable > table > tbody > tr > td.main { position: relative; min-width: 200px; }
+.datatable > table > tbody > tr > td.main.picture > .image { background: #eee; border-radius: 20px; display: block !important; height: 40px; left: 5px; position: absolute; top: 5px; width: 40px; }
+.datatable > table > tbody > tr > td.main.picture > span { padding-left: 50px; }

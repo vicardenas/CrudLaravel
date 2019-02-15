@@ -39,6 +39,7 @@ body { background: #f6f6f6; }
 #main > section > #title > h1 > i {}
 #main > section > #title > #actions { height: 40px; padding: 2px 0; position: absolute; right: 20px; top: 10px; }
 #main > section > #title > #actions > .button { height: 100%; }
+#main > section > #content { height: calc(100% - 60px); overflow-y: scroll; padding: 20px; }
 #main.expand > aside { width: 200px; }
 #main.expand > aside > header > #logo > span { display: block; }
 #main.expand > aside > header > #account { height: 80px; padding: 10px 5px; }
