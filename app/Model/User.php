@@ -37,4 +37,15 @@ class User extends Authenticatable
     {
         return "{$this->first_name} {$this->last_name}";
     }
+
+    public function getIsAdminAttribute()
+    {
+        return $this->attributes['role'] == 'admin';
+    }
+
+    /* GETTERS */
+    public function getRoleAttribute()
+    {
+        return $this->attributes['role'] == 'admin' ? 'Administrador' : 'Usuario';
+    }
 }
